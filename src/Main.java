@@ -205,7 +205,7 @@ public class Main {
                 case '4':
                 {
                     p("> Employee Id: \r\n");
-                    int id = sc.nextInt();
+                    int id = Integer.parseInt(sc.nextLine());
                     var employeeOfId = employees.stream().filter(x -> x.getId() == id).collect(Collectors.toList());
                     if (employeeOfId.isEmpty()){
                         p("\t No matching employee has that id!");
@@ -220,7 +220,7 @@ public class Main {
                 case '5':
                 {
                     p("> Employee Id: \r\n");
-                    int id = sc.nextInt();
+                    int id = Integer.parseInt(sc.nextLine());
                     var employeeOfId = employees.stream().filter(x -> x.getId() == id).collect(Collectors.toList());
                     if (employeeOfId.isEmpty()){
                         p("\t No matching employee has that id!");

@@ -49,7 +49,7 @@ public class Employee {
     public String toString(){
         return "Employee Id: " + id + ", Full Name: " + firstName + " " + middleName + " " + lastName + ", Address: " + address + ", Birthdate: " + birthDate + ", Marital Status: " +
                 maritalStatus + ", Position: " + position + ", Rate Per Hour: " + ratePerHour + ", Payroll Type: " + payrollType + ", Department: " + departments +
-                ", Employee Status: " + employeeStatus + "\r\n\tDependent: " + dependent.toString();
+                ", Employee Status: " + employeeStatus + "\r\n\tDependent: " + (dependent == null ? "None!" : dependent.toString());
     }
 
     public Employee(Credentials credentials,
